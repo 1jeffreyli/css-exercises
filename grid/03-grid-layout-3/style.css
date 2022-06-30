@@ -17,11 +17,24 @@
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-items: start;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style: none;
+}
+
+.menu > ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 50px;
+  align-items: end;
+  justify-items: center;
 }
 
 .sidebar {
